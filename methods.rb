@@ -48,4 +48,11 @@ module Methods
 		end
 	end
 
+	def diff21(n)
+		if(n > 21)
+			2 * (n - 21)
+		else
+			21-n
+		end
+	end
 end

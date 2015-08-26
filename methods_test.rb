@@ -37,5 +37,11 @@ class MethodsTest < MiniTest::Test
   	assert_equal 12, @m.sum_double(3, 3)
   	assert_equal -16, @m.sum_double(-4, -4)
   end
-
+  def test_diff21 
+    assert_equal 11, @m.diff21(10)
+    assert_equal 44, @m.diff21(43)
+    assert_equal 21, @m.diff21(0)
+    assert_equal 31, @m.diff21(-10)
+    assert_equal 0, @m.diff21(21)
+  end
 end
