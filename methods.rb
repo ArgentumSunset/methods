@@ -26,7 +26,9 @@ module Methods
 	# * a_smile   - true only if monkey a is smiling
 	# * b_smile   - true only if monkey b is smiling
 	#
-	# TODO - write monkey_trouble?
+	def monkey_trouble?(a_smile, b_smile)
+		a_smile && b_smile || !a_smile && !b_smile
+	end
 
 	# sum_double
 	#
@@ -38,6 +40,12 @@ module Methods
 	# * a - an integer
 	# * b - an integer
 	#
-	# TODO - write sum_double
+	def sum_double(int1, int2)
+		if(int1 != int2)
+			int1 + int2
+		elsif(int1 == int2)
+			(int1 + int2) * 2
+		end
+	end
 
 end
